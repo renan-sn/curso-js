@@ -1,0 +1,32 @@
+body {
+   background: rgba(83, 83, 226, 0.712);
+}
+h2 {
+   color: white;
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-shadow: 0px 0px 5px 7px black;
+}
+section {
+   background: white;
+   padding: 15px;
+   width: 400px;
+   height: auto;
+   margin: ;
+   border-radius: 10px;
+   box-shadow: 0px 0px 15px 5px black;
+}
+div {
+   
+}
+p.button {
+   text-align: center;
+}
+input[type=button] {
+   border: none;
+   border-radius: 5px;
+   height: 25px;
+}
+select {
+   padding: 7px;
+}

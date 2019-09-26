@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div#bloco-1, div#bloco-2, div#bloco-3 {
+            font: Normal 15pt Verdana;
+            text-align: center;
+            line-height: 130px;
+            color: aliceblue;
+            background: rgb(100, 100, 194);
+            width: 130px;
+            height: 130px;
+            margin: 10pt;
+            border-radius: 15pt;
+            float: left;
+        }
+        
+        div#calc {
+            font: Normal 7pt Verdana;
+            text-align: center;
+            color: aliceblue;
+            background: rgb(100, 100, 194);
+            border-radius: 15pt;
+            display: none;
+            position: relative;
+            width: 445px;
+            height: 300px;
+            margin: 10pt;
+            top: 125pt;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="bloco-1" onclick="clicar()" onmouseout="sair()">Click</div>
+    <div id="bloco-2" onmouseenter="passar()" onmouseout="sair2()">Passe</div>
+    <div id="bloco-3" onmouseenter="entrar()" onclick="abrir()" onclick="fechar()" onmouseout="exit()">Calculator</div>
+    
+    <div id="calc">
+        <h1>Somando valores</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="res">Resultado</div>
+            <script>
+                function somar() {
+                    var tn1 = window.document.getElementById('txtn1')
+                    var tn2 = window.document.querySelector('input#txtn2')
+                    var res = window.document.getElementById('res')
+                    var n1 = Number(tn1.value)
+                    var n2 = Number(tn2.value)
+                    var s = n1 + n2
+                    res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}` 
+                }
+            
+            </script>
+    </div>
+    <script>        
+            var int = window.document.getElementById('bloco-1')
+                function clicar() {
+                    int.innerText = 'Clicou'
+                }
+                function sair() {
+                    int.innerText = 'Click'
+                }
+
+            var pas = window.document.getElementById('bloco-2')
+                function passar() {
+                    pas.innerText = 'Olá, mundo!'
+                }
+                function sair2() {
+                    pas.innerText = 'Passe'
+                }
+            
+            var cal = window.document.getElementById('bloco-3')
+                function entrar() {
+                    cal.innerText = 'Abrir'
+                }
+                function exit() {
+                    cal.innerText = 'Calculator'
+                }
+                function abrir() {
+                    document.getElementById('calc').style.display = "block"
+                }
+                
+        </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+div {
+    margin: auto;
+    border: solid 2px;
+    padding: 10px;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.253);
+}
+p {
+    margin: auto;
+    text-align: center;
+    color:rgb(4, 50, 255);
+    font-size: 30pt;
+}

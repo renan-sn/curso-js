@@ -1,0 +1,9 @@
+
+
+
+var a = 2.5
+
+do {
+    console.log(`${a}+ 2.5 é igual a:`);
+    
+} while (a < 11);

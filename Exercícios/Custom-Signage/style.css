@@ -1,0 +1,45 @@
+:root {
+   --section-fundo: rgba(155, 153, 153, 0.322);
+}
+section {
+   background: var(--section-fundo);
+   width: 300px;
+   height: auto;
+   margin: auto;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px 0px black;
+   border: 1px dotted;
+   padding: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.span {
+   display: none;
+   font-size: 9.464pt;
+   color: red;
+}
+h2, h4 {
+   text-align: center;
+}
+h1 {
+   text-align: center;
+   background: red;
+   border-radius: 5px;
+}
+input[type=text] {
+   width: 100%;
+   font-size: 15pt;
+   margin-top: 5px;
+}
+label[for=name] {
+   color: black;
+   font-size: 15pt;
+}
+input[type=button] {
+   padding: 3px;
+   margin-top: 4px;  
+}
+input.volt {
+   display: none;
+   position: relative;
+   left: 260px;
+}

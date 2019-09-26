@@ -1,0 +1,18 @@
+div {
+    background: rgba(128, 128, 128, 0.233);
+    border: solid 2px;
+    padding: 10px;
+    width: 60%;
+    margin: auto; 
+}
+
+p {
+    font-size: 20pt;
+    color: rgb(38, 0, 255);
+}
+
+li.new {
+    padding: 20px; 
+    background: yellowgreen;
+    transition: .8s;
+}
